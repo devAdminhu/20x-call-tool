@@ -22,8 +22,8 @@ Este projeto oferece um fluxo interativo para envio de imagens ou prompts de tex
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/devAdminhu/20xbuild.git
-   cd 20xbuild
+   git clone https://github.com/devAdminhu/20x-call-tool.git
+   cd 20x-call-tool
    ```
 
 2. Execute o script principal:
