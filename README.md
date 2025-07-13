@@ -1,90 +1,59 @@
-20x Call Tool
-A tool for interactive user input processing with image and text handling capabilities, built with CustomTkinter and Pillow.
-Setup Instructions
+20x-call-tool – Loop Interativo com Feedback do Usuário
+Este projeto oferece um fluxo interativo para envio de imagens ou prompts de texto, ideal para aplicações de IA que requerem interação contínua e feedback do usuário.
+🧠 Como Funciona
 
-Clone the Repository:
+A cada ciclo, o usuário pode enviar uma imagem ou um texto.
+O script userinput.py gerencia a interface gráfica e solicita a próxima entrada após cada tarefa.
+O ciclo se repete automaticamente até que o usuário digite stop para finalizar.
+
+📦 Requisitos
+
+Python 3.8 ou superior
+
+Instale as dependências necessárias:
+pip install customtkinter CTkMessagebox Pillow
+
+
+
+⚙️ Configuração no Cursor
+Para configurar o projeto no Cursor, siga estas etapas adicionais:
+
+Crie a pasta .cursor/rules/ no diretório raiz do projeto:
+mkdir -p .cursor/rules
+
+
+Renomeie o arquivo rules.md para .mdc e mova-o para a pasta .cursor/rules/:
+mv rules.md .cursor/rules/.mdc
+
+
+Verifique se o arquivo .mdc está na pasta .cursor/rules/ e contém o conteúdo correto (conforme fornecido no projeto).
+
+
+🚀 Passos para Utilização
+
+Clone o repositório:
 git clone https://github.com/devAdminhu/20x-call-tool.git
 cd 20x-call-tool
 
 
-Install Dependencies: Ensure you have Python installed. Then, install the required packages:
-pip install customtkinter CTkMessagebox Pillow
-
-
-Configure Cursor IDE: To enable the interactive task loop in the Cursor IDE, follow these steps:
-
-Create a directory named .cursor/rules/ in the root of the project:
-mkdir -p .cursor/rules
-
-
-Copy the content of rules.md (provided below) into a new file named .mdc inside .cursor/rules/:
-touch .cursor/rules/.mdc
-
-
-Open .cursor/rules/rules.mdc in a text editor and paste the following content:
----
-description: 
-globs: 
-alwaysApply: true
----
-
-### ✅ Task: Interactive Task Loop with User Feedback 
-
-1. The `userinput.py` file must be present in the root directory.
-
-2. **Main Flow** (priority):
-
-   * Perform your assigned tasks.
-
-   * Run:
-
-     ```bash
-     python userinput.py
-     ```
-   * The terminal should open in the chat window itself.
-
-   * Read the user's input.
-
-   * Based on the input, perform the next set of tasks.
-
-   * Repeat the process after finishing each created task list.
-
-3. **Exit Condition**:
-
-   * If the user types `"stop"` when prompted, exit the loop and terminate the process.
-
-
-Save the .mdc file.
-
-
-
-Run the Application: Execute the main script to start the interactive loop:
+Execute o script principal:
 python userinput.py
 
 
+Siga as instruções na interface para:
 
-Usage
-
-The application prompts you to choose between uploading an image or entering text.
-If you choose an image:
-Select an image file (PNG, JPG, JPEG, BMP, or GIF).
-The image is copied to 20xbuild/img/, and old images are removed.
-You can optionally add a prompt for the AI.
+Enviar uma imagem (ela será salva em 20xbuild/img)
+Adicionar um prompt opcional
+Ou apenas enviar um texto
 
 
-If you choose text:
-Enter a text prompt for the AI.
+Após cada envio, uma nova solicitação será apresentada automaticamente.
+
+Para encerrar o ciclo, digite stop quando solicitado.
 
 
-The program outputs the result and any additional prompt to the console.
-To exit, type "stop" when prompted (if integrated with the task loop).
+📁 Estrutura do Projeto
 
-Requirements
-
-Python 3.x
-Libraries: customtkinter, CTkMessagebox, Pillow
-
-Project Structure
-
-userinput.py: Main script for user interaction and image/text processing.
-.cursor/rules/.mdc: Configuration file for Cursor IDE to enable the interactive task loop.
+userinput.py: Script principal que gerencia a interface gráfica e o loop interativo.
+.cursor/rules/.mdc: Arquivo de regras para configuração no Cursor (após renomeação e movimentação).
+20xbuild/img/: Pasta onde as imagens enviadas são salvas.
