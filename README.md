@@ -1,40 +1,14 @@
-# 20x-call-tool – Loop Interativo com Feedback do Usuário
+# 20x-Tool-Calls - Interactive Loop with User Feedback
 
-Este projeto oferece um fluxo interativo para envio de imagens ou prompts de texto, ideal para aplicações de IA que requerem interação contínua e feedback do usuário.
+A simple rules setup designed for agent-based coding assistants that support tool calls, helping you maximize your monthly tool call allowance through an interactive loop with user input.
 
-## 🧠 Como Funciona
+## 🧠 How It Works
 
-- A cada ciclo, o usuário pode enviar uma imagem ou um texto.
-- O script `userinput.py` gerencia a interface gráfica e solicita a próxima entrada após cada tarefa.
-- O ciclo se repete automaticamente até que o usuário digite `stop` para finalizar.
+- Each cycle accepts text input from the user
+- The `userinput.py` script manages input collection and prompts for the next task
+- The loop continues automatically until you type `stop` or reach the tool call limit
 
-## 📦 Requisitos
+## 📦 Requirements
 
-- Python 3.8 ou superior
-- Instale as dependências necessárias:
-
-  ```bash
-  pip install customtkinter CTkMessagebox Pillow
-  ```
-
-## 🚀 Passos para Utilização
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/devAdminhu/20x-call-tool.git
-   cd 20x-call-tool
-   ```
-
-2. Execute o script principal:
-
-   ```bash
-   python userinput.py
-   ```
-
-3. Siga as instruções na interface para:
-   - Enviar uma imagem (ela será salva em `20xbuild/img`)
-   - Adicionar um prompt opcional
-   - Ou apenas enviar um texto
-
-4. Após cada envio, uma nova solicitação será apresentada automaticamente.
+- Python 3.8 or higher
+- Install required dependencies:
