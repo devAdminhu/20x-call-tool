@@ -33,6 +33,6 @@ Run the script:
 ```
 
 📌 Notes
-Type stop to exit the loop.
+Type `stop` to exit the loop.
 
 The goal is to maximize tool call usage within your monthly allowance.
