@@ -1,40 +1,40 @@
 ---
-description: 
-globs: 
+description:
+globs:
 alwaysApply: true
 ---
 
-### ✅ Tarefa: Loop de Tarefas Interativo com Feedback do Usuário
+### ✅ Task: Interactive Task Loop with User Feedback
 
-1. **Verificar se `userinput.py` existe** no diretório raiz.
+1. **Check if `userinput.py` exists** in the root directory.
 
-   * Se não existir, criar com o seguinte conteúdo:
+* If it doesn't exist, create it with the following content:
 
-     ```python
-     # userinput.py
-     user_input = input("prompt: ")
-     ```
+```python
+# userinput.py
+user_input = input("prompt: ")
+```
 
-2. **Fluxo Principal**:
+2. **Main Flow**:
 
-   * Executar as tarefas designadas.
+* Execute the assigned tasks.
 
-   * Antes de marcar uma tarefa como concluída:
-     - Criar lista de testes necessários
-     - Executar testes de validação
-     - Se os testes passarem, executar:
+* Before marking a task as complete:
+- Create a list of required tests
+- Run validation tests
+- If the tests pass, run:
 
-     ```bash
-     python userinput.py
-     ```
-   * O terminal deve ser aberto na própria janela de chat.
+```bash
+python userinput.py
+```
+* The terminal should be open in the chat window itself.
 
-   * Ler a entrada do usuário.
+* Read the user input.
 
-   * Com base na entrada, executar o próximo conjunto de tarefas.
+* Based on the input, execute the next set of tasks.
 
-   * Somente após validação dos testes, a tarefa pode ser marcada como concluída.
+* Only after the tests have been validated can the task be marked as complete.
 
-3. **Condição de Saída**:
+3. **Exit Condition**:
 
-   * Se o usuário digitar `"stop"` quando solicitado, sair do loop e encerrar o processo.
+* If the user enters `"stop"` when prompted, exit the loop and end the process.
