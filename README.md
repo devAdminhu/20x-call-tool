@@ -36,3 +36,14 @@ Run the script:
 Type `stop` to exit the loop.
 
 The goal is to maximize tool call usage within your monthly allowance.
+
+
+## Star History
+
+<a href="https://www.star-history.com/#devAdminhu/20x-call-tool&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=devAdminhu/20x-call-tool&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=devAdminhu/20x-call-tool&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=devAdminhu/20x-call-tool&type=Date" />
+ </picture>
+</a>
